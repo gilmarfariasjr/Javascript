@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cidade</title>
+</head>
+<body>
+    <h1>Cidade Nascimento</h1>
+    Em qual cidade você nasceu: <input type="text" name="cidade" id="cidade">
+    <input type="button" value="verificar" onclick="executar()">
+    <div id="res"></div>
+
+    <script>
+        function executar(){
+            var cida=document.getElementById('cidade');
+            var res = document.getElementById('res');
+            var ci = cida.value
+            
+            if(ci=="João Pessoa"){
+                res.innerHTML=`<p>Você é de <strong>${ci}</strong> <p>`
+                res.style.background='black'
+                res.style.color='white'
+            }
+            else{
+                res.innerHTML=`<p>Você não é de <strong>João Pessoa</strong></p>`
+            }   
+        }
+
+    </script>
+</body>
+</html>

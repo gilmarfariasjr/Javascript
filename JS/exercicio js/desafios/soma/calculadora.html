@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculador</title>
+    <link rel="shortcut icon" href="imagens/calculadora.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <h1>Calculadora</h1>
+    </header>
+    <section>
+        <div>
+            <p>Digite o primeiro número: <input type="number" name="numero1" id="numero1"></p>
+            <p>Digite o segundo número: <input type="number" name="numero2" id="numero2"></p>
+            <p>Escolha o sinal:</p>
+            <p><input type="button" value="+" onclick="somar()" class="boto">
+            <input type="button" value="-" onclick="subtrair()" class="boto">
+            <input type="button" value="*" onclick="multiplicaçao()" class="boto">
+            <input type="button" value="/" onclick="divisao()" class="boto"></p>
+        </div>
+        <div id="res">
+            
+        </div>
+    </section>
+    <footer>
+        <p>Criado por <a href="http://https://github.com/gilmarfariasjr?tab=repositories" target="_blank" rel="noopener noreferrer"><strong>@GILMAR FARIAS</a></strong></p>
+    </footer>
+
+    <script src="soma.js"></script>
+</body>
+</html>
